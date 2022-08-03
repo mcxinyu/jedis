@@ -146,7 +146,7 @@ public abstract class JedisPubSub {
         final String strpattern = (bpattern == null) ? null : SafeEncoder.encode(bpattern);
         onPUnsubscribe(strpattern, subscribedChannels);
       } else {
-        throw new JedisException("Unknown message type: " + firstObj);
+        //throw new JedisException("Unknown message type: " + firstObj);
       }
     } while (isSubscribed());
 
